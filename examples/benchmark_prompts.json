@@ -1,0 +1,127 @@
+[
+  {
+    "id": "coding-001",
+    "category": "coding",
+    "prompt": "You are a senior Python engineer. I want you to review a Flask endpoint that accepts uploaded CSV files, parses rows, writes them into Postgres, and returns a summary. Please note that the current implementation sometimes times out and duplicates rows when users retry. The answer must include likely root causes, a safer architecture, idempotency strategy, validation rules, and tests. Do not suggest switching away from Flask. Output markdown with sections for Diagnosis, Proposed Fix, Data Model, Tests, and Rollout."
+  },
+  {
+    "id": "coding-002",
+    "category": "coding",
+    "prompt": "Help me design a TypeScript utility for validating webhook signatures. The function should accept headers, raw body, timestamp tolerance, and secret. It must reject missing signatures, stale timestamps, malformed payloads, and timing-unsafe comparisons. Include API shape, error types, unit tests, and examples. Keep the solution dependency-light and compatible with Node 20."
+  },
+  {
+    "id": "coding-003",
+    "category": "coding",
+    "prompt": "I need a migration plan for moving a Django app from integer primary keys to UUID primary keys. The plan should be very practical and safe. Include schema migration phases, backfill process, foreign key handling, deployment ordering, rollback plan, and data validation queries. Do not assume downtime is allowed. The output should be concise but complete."
+  },
+  {
+    "id": "coding-004",
+    "category": "coding",
+    "prompt": "You are debugging a React dashboard where filters reset unexpectedly after pagination. The code uses URL query params, local component state, and a data-fetching hook. Explain the likely state ownership problem, propose a cleaner state model, and include acceptance tests. Do not add Redux. The response must include implementation steps and edge cases."
+  },
+  {
+    "id": "coding-005",
+    "category": "coding",
+    "prompt": "Create a concise plan to add rate limiting to a FastAPI service. It should support per-user and per-IP limits, Redis storage, helpful 429 responses, metrics, and tests. Include failure behavior when Redis is unavailable. The API must remain backward compatible."
+  },
+  {
+    "id": "summarization-001",
+    "category": "summarization",
+    "prompt": "Summarize the following internal meeting notes for executives. The summary must include decisions made, open risks, owners, deadlines, and dependencies. Do not include personal opinions or speculation. Use bullet points and keep it under 250 words. The source notes are long, repetitive, and include side conversations about staffing, vendor delays, security review, analytics gaps, and launch readiness."
+  },
+  {
+    "id": "summarization-002",
+    "category": "summarization",
+    "prompt": "Turn a long research article about retrieval augmented generation into a short technical brief. Include the core idea, architecture, benefits, limitations, evaluation metrics, and when not to use it. The brief should be useful for engineers deciding whether to adopt RAG. Preserve caveats about data freshness, chunking, hallucination, and access control."
+  },
+  {
+    "id": "summarization-003",
+    "category": "summarization",
+    "prompt": "Condense a 30-page product requirements document into a one-page launch brief. The output must include target users, problem statement, success metrics, in-scope features, out-of-scope features, analytics events, risks, and release criteria. Do not remove numeric targets, deadlines, or compliance constraints."
+  },
+  {
+    "id": "summarization-004",
+    "category": "summarization",
+    "prompt": "Summarize customer support tickets about billing confusion. Group the themes, include representative evidence, rank severity, and recommend product changes. Never expose customer names or emails. Include a table with Theme, Evidence, Impact, and Recommendation."
+  },
+  {
+    "id": "email-001",
+    "category": "email",
+    "prompt": "Draft a professional email to a vendor explaining that their latest integration build failed security review. The email should be firm but collaborative. Include the three blocking issues, the deadline for a corrected build, and the offer to meet tomorrow. Do not blame individuals. Keep it under 180 words."
+  },
+  {
+    "id": "email-002",
+    "category": "email",
+    "prompt": "Write a concise follow-up email to a recruiter after a technical interview. Mention appreciation, continued interest in the AI engineer role, one specific project connection, and availability for next steps. The tone should be warm and confident, not desperate. Do not exceed 120 words."
+  },
+  {
+    "id": "email-003",
+    "category": "email",
+    "prompt": "Create a customer apology email for a delayed shipment. Include a clear apology, reason at a high level, revised delivery window, refund or credit option, and support contact. Do not overpromise. The brand voice should be calm, direct, and helpful."
+  },
+  {
+    "id": "research-001",
+    "category": "research",
+    "prompt": "Compare vector databases for a startup building semantic search. Include Pinecone, Weaviate, Qdrant, pgvector, and Elasticsearch. Evaluate cost, operational complexity, metadata filtering, hybrid search, scaling, and developer experience. The output must include a recommendation for a small team with Postgres expertise."
+  },
+  {
+    "id": "research-002",
+    "category": "research",
+    "prompt": "Prepare a research plan for evaluating LLM prompt compression. Include dataset selection, baseline methods, metrics, human review rubric, failure cases, and reproducibility requirements. The plan must measure token reduction, answer quality, instruction retention, and latency. Do not rely only on subjective judgment."
+  },
+  {
+    "id": "research-003",
+    "category": "research",
+    "prompt": "Create a market scan for AI meeting assistant products. Include categories, common features, privacy concerns, pricing patterns, differentiators, and open opportunities. Keep the output structured for a founder deciding whether to build in this space. Include risks around recording consent and enterprise security."
+  },
+  {
+    "id": "support-001",
+    "category": "support",
+    "prompt": "Respond to a user who cannot log in after changing phones. Ask for safe troubleshooting details, explain likely causes, and give step-by-step recovery instructions. Do not ask for passwords, one-time codes, or full payment details. Include escalation criteria for support agents."
+  },
+  {
+    "id": "support-002",
+    "category": "support",
+    "prompt": "Write a support macro for customers whose API requests are returning 429 errors. Explain rate limits, how to inspect response headers, retry-after behavior, exponential backoff, and when to request a quota increase. Keep the tone helpful and technical. Include links as placeholders only."
+  },
+  {
+    "id": "support-003",
+    "category": "support",
+    "prompt": "Create a troubleshooting guide for failed invoice payments. Include card failures, bank declines, expired cards, tax validation issues, retry schedule, and account access impact. Do not include legal advice. Output as a checklist support agents can follow."
+  },
+  {
+    "id": "planning-001",
+    "category": "planning",
+    "prompt": "Build a two-week execution plan for launching a beta feature. Include engineering tasks, design review, QA, documentation, analytics, support readiness, risk review, and launch decision meeting. Assign owners by function, not by name. Include dependencies and acceptance criteria."
+  },
+  {
+    "id": "planning-002",
+    "category": "planning",
+    "prompt": "Create a study plan for learning machine learning system design in 30 days. Include daily topics, practice exercises, project milestones, and review checkpoints. The plan should balance theory and implementation. Assume the learner knows Python and basic ML but has limited production experience."
+  },
+  {
+    "id": "planning-003",
+    "category": "planning",
+    "prompt": "Plan a migration from a monolithic deployment to containerized services. Include discovery, dependency mapping, Dockerfile standards, CI changes, environment config, observability, rollback strategy, and phased rollout. Do not recommend Kubernetes for the first phase unless clearly justified."
+  },
+  {
+    "id": "planning-004",
+    "category": "planning",
+    "prompt": "Make a project plan for adding audit logs to an admin dashboard. Include events to log, schema, UI changes, access controls, retention policy, export behavior, tests, and rollout. The system must protect sensitive fields and support compliance review."
+  },
+  {
+    "id": "analysis-001",
+    "category": "analysis",
+    "prompt": "Analyze a drop in trial-to-paid conversion for a SaaS product. Consider onboarding friction, pricing page confusion, activation metrics, email lifecycle, sales handoff, support issues, and experiment design. Output hypotheses, data to inspect, suggested experiments, and success metrics."
+  },
+  {
+    "id": "analysis-002",
+    "category": "analysis",
+    "prompt": "Given an incident where background jobs processed duplicate refunds, write a postmortem outline. Include impact, timeline, root cause, contributing factors, detection gaps, customer remediation, corrective actions, and prevention tests. Do not assign blame. The format must be suitable for engineering leadership."
+  },
+  {
+    "id": "analysis-003",
+    "category": "analysis",
+    "prompt": "Evaluate whether a team should build or buy an internal feature flag system. Include requirements, hidden maintenance costs, security and audit needs, vendor lock-in, migration risks, and decision criteria. End with a recommendation for a 12-person engineering team."
+  }
+]
