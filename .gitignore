@@ -12,3 +12,5 @@ node_modules/
 frontend/dist/
 .vercel/
 benchmark_results.json
+*.md
+!README.md
